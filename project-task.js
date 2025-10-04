@@ -47,7 +47,7 @@ but it contains multiple syntax errors that prevent it from being parsed.
 const invalidBookingJSON = `
 {
   "hotelName": "Grand City Hotel",
-  "checkInDate": "2024-05-15"
+  "checkInDate": "2024-05-15" 
   "checkOutDate": "2024-05-20",
   "guests": [
     {
@@ -68,6 +68,15 @@ const invalidBookingJSON = `
   }
 }
 `;
+
+/*
+Issue Tracker:
+
+Missing comma after checkInDate object
+missing quotes around guests[0].name
+value of guests[1].age needs to be null, not undefined.  Undefined is not an accepted value
+roomDetails.amenities should not have a comma after "Parking"
+*/
 
 
 // ============================================
