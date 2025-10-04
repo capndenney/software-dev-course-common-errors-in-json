@@ -71,11 +71,10 @@ const invalidBookingJSON = `
 
 /*
 Issue Tracker:
-
-Missing comma after checkInDate object
-missing quotes around guests[0].name
-value of guests[1].age needs to be null, not undefined.  Undefined is not an accepted value
-roomDetails.amenities should not have a comma after "Parking"
+-Missing comma after checkInDate object
+-missing quotes around guests[0].name
+-value of guests[1].age needs to be null, not undefined.  Undefined is not an accepted value
+-roomDetails.amenities should not have a comma after "Parking"
 */
 
 
@@ -101,10 +100,18 @@ roomDetails.amenities should not have a comma after "Parking"
 
 1️⃣ What tools or techniques did you use to identify the errors?
 
+I went through based on what we learned first to search for errors and found 4. Once that was done, I pasted it into a JSON file with JsonLint installed to see if there were others, there were not.
+
 2️⃣ How did you confirm that your corrected JSON file was valid?
+
+To validate, I ran it through a json linter.
 
 3️⃣ Which errors were the most difficult to spot? Why?
 
+I didn't find any of them particularly hard to spot.  JSON has pretty straight forward rules, undefined is probably the most likely to slip through the cracks, but with the linter, its harder to miss issues.
+
 4️⃣ What strategies can help you avoid these kinds of errors in the future?
    (e.g., syntax highlighting, linters, writing JSON by example)
+
+   linters and writing using a pattern will always make it easier to write quality code the first time.
 */
